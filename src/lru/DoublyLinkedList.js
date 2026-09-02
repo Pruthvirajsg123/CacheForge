@@ -24,6 +24,11 @@ class DoublyLinkedList {
     node.prev = null;
     node.next = null;
   }
+
+  moveToHead(node) {
+    this.removeNode(node);
+    this.addToHead(node);
+  }
 }
 
 module.exports = DoublyLinkedList;
